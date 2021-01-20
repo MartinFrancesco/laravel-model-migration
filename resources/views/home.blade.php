@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <h1>ohhhh</h1>
+    <h1>Car Shop</h1>
 
     <ul>
         @foreach ($cars as $car)
@@ -12,4 +12,14 @@
         </li>
         @endforeach
     </ul>
+
+    <section id="app">
+        <h2>Our Bikes</h2>
+        <ul>
+            <li v-for="bike in bikes">
+                <h3>@{{ bike.modello }}</h3>
+                <div class="brand">@{{ bike.marca }}</div>
+            </li>
+        </ul>
+    </section>
 @endsection

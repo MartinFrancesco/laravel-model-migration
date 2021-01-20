@@ -19,6 +19,7 @@
         </main>
 
         @include('partials.header')
-        
+      
+    <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
